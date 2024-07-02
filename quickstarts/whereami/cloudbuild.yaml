@@ -24,15 +24,6 @@ steps:
     - 'us-docker.pkg.dev/qwiklabs-gcp-02-db9ca233d102/cepf-app-mod-repo:v1.2.22'
     - '.'
   dir: 'quickstarts/whereami'
-- name: ubuntu
-  script: |
-    apt update
-    apt install curl -y
-    curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-    cd quickstarts/whereami/helm-chart
-    helm package .
-    helm push whereami-1.2.22.tgz oci://us-docker.pkg.dev/google-samples/charts
-
 images:
   - 'us-docker.pkg.dev/qwiklabs-gcp-02-db9ca233d102/cepf-app-mod-repo:v1.2.22'
 options:
