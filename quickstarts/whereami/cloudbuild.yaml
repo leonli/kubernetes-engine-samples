@@ -21,10 +21,10 @@ steps:
   args:
     - 'build'
     - '-t'
-    - 'us-docker.pkg.dev/qwiklabs-gcp-02-db9ca233d102/cepf-app-mod-repo/whereami:v1.2.22'
+    - 'us-docker.pkg.dev/qwiklabs-gcp-00-5be97f7aebe4/cepf-app-mod-repo/whereami:v1.2.22'
     - '.'
   dir: 'quickstarts/whereami'
 images:
-  - 'us-docker.pkg.dev/qwiklabs-gcp-02-db9ca233d102/cepf-app-mod-repo/whereami:v1.2.22'
+  - 'us-docker.pkg.dev/qwiklabs-gcp-00-5be97f7aebe4/cepf-app-mod-repo/whereami:v1.2.22'
 options:
   logging: CLOUD_LOGGING_ONLY
