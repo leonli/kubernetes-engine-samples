@@ -24,6 +24,8 @@ steps:
     - 'us-docker.pkg.dev/qwiklabs-gcp-02-db9ca233d102/cepf-app-mod-repo:v1.2.22'
     - '.'
   dir: 'quickstarts/whereami'
+- name: 'do-auth'
+  script: 'gcloud auth configure-docker us-docker.pkg.dev'
 images:
   - 'us-docker.pkg.dev/qwiklabs-gcp-02-db9ca233d102/cepf-app-mod-repo:v1.2.22'
 options:
